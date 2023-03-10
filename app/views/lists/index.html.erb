@@ -2,7 +2,7 @@
 <h1>投稿一覧</h1>
 
 <!--@lists<-コントローラーで@list's'と指定しているのに注意-->
-<% @lists.each do |list| %>
+<%= @lists.each do |list| %>
   <p>タイトル</p>
   <span><%= list.title %></span>
 <% end %>

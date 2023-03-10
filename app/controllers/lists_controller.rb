@@ -14,6 +14,9 @@ class ListsController < ApplicationController
   end
 
   def show
+    @list = List.find(params[:id])
+    #Listの中でパラメータが[:id]であるレコードを取得
+    #さらに、ルーティングで[:id]はURLと紐づけられている
   end
 
   def edit
